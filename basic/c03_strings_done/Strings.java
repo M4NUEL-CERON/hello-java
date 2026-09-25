@@ -1,4 +1,4 @@
-package basic.c03_strings;
+package basic.c03_strings_done;
 
 public class Strings {
 

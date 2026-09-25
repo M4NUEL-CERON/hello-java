@@ -1,4 +1,4 @@
-package basic.c01_beginner;
+package basic.c01_beginner_done;
 
 /*
 Clase 16 - Tipos de datos primitivos

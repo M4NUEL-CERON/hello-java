@@ -1,4 +1,4 @@
-package basic.c04_conditionals;
+package basic.c04_conditionals_done;
 
 /*
 Clase 35 - Condicionales

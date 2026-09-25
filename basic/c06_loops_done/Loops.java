@@ -1,4 +1,4 @@
-package basic.c06_loops;
+package basic.c06_loops_done;
 
 /*
 Clase 45 - Bucles

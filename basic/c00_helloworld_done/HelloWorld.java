@@ -1,4 +1,4 @@
-package basic.c00_helloworld;
+package basic.c00_helloworld_done;
 
 /*
 Clase 12 - Hola Mundo

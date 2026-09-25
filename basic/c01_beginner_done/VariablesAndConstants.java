@@ -1,4 +1,4 @@
-package basic.c01_beginner;
+package basic.c01_beginner_done;
 
 /*
 Clase 15 - Variables y constantes

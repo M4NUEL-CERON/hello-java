@@ -33,23 +33,23 @@ Introducción
 
 Primeros pasos
 
-* [12 - Hola Mundo](https://youtu.be/JOAqpdM36wI?t=4250) | [Código](./basic/c00_helloworld/HelloWorld.java)
+* [12 - Hola Mundo](https://youtu.be/JOAqpdM36wI?t=4250) | [Código](./basic/c00_helloworld_done/HelloWorld.java)
 * [13 - Comentarios](https://youtu.be/JOAqpdM36wI?t=4937)
-* [14 - Ejercicios: Primeros pasos](https://youtu.be/JOAqpdM36wI?t=5108) | [Ejercicios](./basic/c00_helloworld/HelloWorldExercises.java)
-* [15 - Variables y constantes](https://youtu.be/JOAqpdM36wI?t=5294) | [Código](./basic/c01_beginner/VariablesAndConstants.java) 
-* [16 - Tipos de datos primitivos](https://youtu.be/JOAqpdM36wI?t=6211) | [Código](./basic/c01_beginner/DataTypes.java)
-* [17 - Ejercicios: Variables y constantes](https://youtu.be/JOAqpdM36wI?t=6732) | [Ejercicios](./basic/c01_beginner/BeginnerExercises.java)
+* [14 - Ejercicios: Primeros pasos](https://youtu.be/JOAqpdM36wI?t=5108) | [Ejercicios](./basic/c00_helloworld_done/HelloWorldExercises.java)
+* [15 - Variables y constantes](https://youtu.be/JOAqpdM36wI?t=5294) | [Código](./basic/c01_beginner_done/VariablesAndConstants.java) 
+* [16 - Tipos de datos primitivos](https://youtu.be/JOAqpdM36wI?t=6211) | [Código](./basic/c01_beginner_done/DataTypes.java)
+* [17 - Ejercicios: Variables y constantes](https://youtu.be/JOAqpdM36wI?t=6732) | [Ejercicios](./basic/c01_beginner_done/BeginnerExercises.java)
 
-Operadores | [Código](./basic/c02_operators/Operators.java)
+Operadores | [Código](./basic/c02_operators_done/Operators.java)
 
 * [18 - Operadores aritméticos](https://youtu.be/JOAqpdM36wI?t=6803)
 * [19 - Operadores de asignación](https://youtu.be/JOAqpdM36wI?t=7069)
 * [20 - Operadores de comparación](https://youtu.be/JOAqpdM36wI?t=7328)
 * [21 - Operadores lógicos](https://youtu.be/JOAqpdM36wI?t=7517)
 * [22 - Operadores unarios](https://youtu.be/JOAqpdM36wI?t=7863)
-* [23 - Ejercicios: Operadores](https://youtu.be/JOAqpdM36wI?t=8085) | [Ejercicios](./basic/c02_operators/OperatorsExercises.java)
+* [23 - Ejercicios: Operadores](https://youtu.be/JOAqpdM36wI?t=8085) | [Ejercicios](./basic/c02_operators_done/OperatorsExercises.java)
 
-Strings | [Código](./basic/c03_strings/Strings.java)
+Strings | [Código](./basic/c03_strings_done/Strings.java)
 
 * [24 - Strings](https://youtu.be/JOAqpdM36wI?t=8140)
 * [25 - Concatenación](https://youtu.be/JOAqpdM36wI?t=8367)
@@ -61,9 +61,9 @@ Strings | [Código](./basic/c03_strings/Strings.java)
 * [31 - equals](https://youtu.be/JOAqpdM36wI?t=9118)
 * [32 - trim y replace](https://youtu.be/JOAqpdM36wI?t=9456)
 * [33 - format](https://youtu.be/JOAqpdM36wI?t=9613)
-* [34 - Ejercicios: Strings](https://youtu.be/JOAqpdM36wI?t=9838) | [Ejercicios](./basic/c03_strings/StringsExercises.java)
+* [34 - Ejercicios: Strings](https://youtu.be/JOAqpdM36wI?t=9838) | [Ejercicios](./basic/c03_strings_done/StringsExercises.java)
 
-Condicionales | [Código](./basic/c04_conditionals/Conditionals.java) | [Ejercicios](./basic/c04_conditionals/ConditionalsExercises.java)
+Condicionales | [Código](./basic/c04_conditionals_done/Conditionals.java) | [Ejercicios](./basic/c04_conditionals_done/ConditionalsExercises.java)
 
 * [35 - Condicionales](https://youtu.be/JOAqpdM36wI?t=9908)
 * [36 - Sentencia if](https://youtu.be/JOAqpdM36wI?t=9978)
@@ -73,28 +73,28 @@ Condicionales | [Código](./basic/c04_conditionals/Conditionals.java) | [Ejercic
 Estructuras
 
 * [39 - Estructuras de datos](https://youtu.be/JOAqpdM36wI?t=11115)
-* [40 - Arrays](https://youtu.be/JOAqpdM36wI?t=11194) | [Código](./basic/c05_structures/Arrays.java)
-* [41 - Listas](https://youtu.be/JOAqpdM36wI?t=12233) | [Código](./basic/c05_structures/Lists.java)
-* [42 - Sets](https://youtu.be/JOAqpdM36wI?t=13502) | [Código](./basic/c05_structures/Sets.java)
-* [43 - Maps](https://youtu.be/JOAqpdM36wI?t=14574) [Código](./basic/c05_structures/Maps.java)
-* [44 - Ejercicios: Estructuras](https://youtu.be/JOAqpdM36wI?t=15680) | [Ejercicios](./basic/c05_structures/StructuresExercises.java)
+* [40 - Arrays](https://youtu.be/JOAqpdM36wI?t=11194) | [Código](./basic/c05_structures_done/Arrays.java)
+* [41 - Listas](https://youtu.be/JOAqpdM36wI?t=12233) | [Código](./basic/c05_structures_done/Lists.java)
+* [42 - Sets](https://youtu.be/JOAqpdM36wI?t=13502) | [Código](./basic/c05_structures_done/Sets.java)
+* [43 - Maps](https://youtu.be/JOAqpdM36wI?t=14574) [Código](./basic/c05_structures_done/Maps.java)
+* [44 - Ejercicios: Estructuras](https://youtu.be/JOAqpdM36wI?t=15680) | [Ejercicios](./basic/c05_structures_done/StructuresExercises.java)
 
-Bucles | [Código](./basic/c06_loops/Loops.java)
+Bucles | [Código](./basic/c06_loops_done/Loops.java)
 
 * [45 - Bucles](https://youtu.be/JOAqpdM36wI?t=15862)
 * [46 - for](https://youtu.be/JOAqpdM36wI?t=16003)
 * [47 - forEach](https://youtu.be/JOAqpdM36wI?t=16646)
 * [48 - while / do while](https://youtu.be/JOAqpdM36wI?t=17199)
 * [49 - Control de bucles](https://youtu.be/JOAqpdM36wI?t=17688)
-* [50 - Ejercicios: Bucles](https://youtu.be/JOAqpdM36wI?t=17993) | [Ejercicios](./basic/c06_loops/LoopsExercises.java)
+* [50 - Ejercicios: Bucles](https://youtu.be/JOAqpdM36wI?t=17993) | [Ejercicios](./basic/c06_loops_done/LoopsExercises.java)
 
-Funciones | [Código](./basic/c07_functions/Functions.java)
+Funciones | [Código](./basic/c07_functions_done/Functions.java)
 
 * [51 - Funciones](https://youtu.be/JOAqpdM36wI?t=186100)
 * [52 - Funciones sin parámetros ni retorno](https://youtu.be/JOAqpdM36wI?t=18394)
 * [53 - Funciones con parámetros / Sobrecarga](https://youtu.be/JOAqpdM36wI?t=18827)
 * [54 - Funciones con retorno](https://youtu.be/JOAqpdM36wI?t=19027)
-* [55 - Ejercicios: Funciones](https://youtu.be/JOAqpdM36wI?t=19521) | [Ejercicios](./basic/c07_functions/FunctionsExercises.java)
+* [55 - Ejercicios: Funciones](https://youtu.be/JOAqpdM36wI?t=19521) | [Ejercicios](./basic/c07_functions_done/FunctionsExercises.java)
 
 Programación Orientada a Objetos (POO)
 

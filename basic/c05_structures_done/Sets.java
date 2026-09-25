@@ -1,4 +1,4 @@
-package basic.c05_structures;
+package basic.c05_structures_done;
 
 /*
 Clase 42 - Sets
