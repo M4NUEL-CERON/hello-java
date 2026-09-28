@@ -57,7 +57,6 @@ public class Abstraction {
     }
 
     // - Interface
-
     public interface Flying {
 
         void fly();
