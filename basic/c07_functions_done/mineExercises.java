@@ -2,18 +2,17 @@ package basic.c07_functions_done;
 
 
 import java.util.*;
-import java.util.stream.Stream;
 
 public class mineExercises {
     public static void main(String[] args) {
-       /*
         int[] arrayNumber = {1, 2, 3, 4, 5, 6, 7};
-        String[] arrayStrings = {"manuel", "CERON"};
         aditionAllToNumber(10);
         turnString("manuel");
         returnBigestNumberOfArray(arrayNumber);
         StringLength("esta palabtra tiene 33 caracteres");
         numberIsPrimo(7);
+
+
         returnArrayParts(arrayNumber);
         compareString("leunam", "Manuel");
         tableMultiple(100);
@@ -21,45 +20,25 @@ public class mineExercises {
         returnArrayIntPart(arrayNumber);
         getStringToReturnHashMap("aaaaaaaA");
 
+        int[] arrayNumberA = {1, 2, 1, 4, 1, 1, 7};
+        int[] arrayNumberB = {1, 2, 3, 1, 1, 6, 7};
+        twoArraysOfInt(arrayNumberA, arrayNumberB);
 
-        int[] arrayNumber = {1, 2, 1, 4, 1, 1, 7};
-        int[] arrayNumber2 = {1, 2, 3, 1, 1, 6, 7};
-        twoArraysOfInt(arrayNumber,  arrayNumber2);
+        ArrayList<String> palabras = new ArrayList<>();
+        palabras.add("manuel");
+        palabras.add("woman");
+        palabras.add("manuel");
+        palabras.add("woman");
+        palabras.add("ceron");
+        palabras.add("manuel1");
+        palabras.add("manuel1");
+        palabras.add("manuel1");
+        palabras.add("manuel1");
 
-        ArrayList<String> arrayNumber3 = new ArrayList<>();
-        arrayNumber3.add("manuel");
-        arrayNumber3.add("woman");
-        arrayNumber3.add("manuel");
-        arrayNumber3.add("woman");
-        arrayNumber3.add("ceron");
-        arrayNumber3.add("manuel1");
-        arrayNumber3.add("manuel1");
-        arrayNumber3.add("manuel1");
-        arrayNumber3.add("manuel1");
-
-        returnValuesUniq(arrayNumber3);
-
-        returnValuesIntegerUniq(arrayNumber);
-
-        */
-
-        int [] manuel = {1, 2, 3, 4, 5, 5, 6, 7, 7, 8, 89, 9, 9};
-        hasDuplicate(manuel);
-
-        var palatra = "manuel";
-        var pablra = "manule";
-
-        isPalindrome(palatra,  pablra);
-
+        returnValuesUniq(palabras);
+        returnValuesIntegerUniq(arrayNumberA);
 
         returnWordBiggestOfSentence("manuel 1914 que mas parce como has estado queremos sabe cual es la palabra mas larga");
-        int [] numerosLista = {1, 12, 12, 12, 12,31,23 , 23,232,3 , 23, 23, 1, 2,3 , 4, 5, 6, 7, 7, 8, 89, 9, 9, 0, 0};
-        int tajer = 24;
-        findIndexSmallersEqualsTarget(numerosLista,tajer);
-        System.out.println(numerosLista[11] + numerosLista[12]);
-
-        String[] listaAnagramas = {"roma", "amor", "ramo", "mora", "omar", "caso", "asco", "saco", "cosa", "frase", "fresa", "poder", "pedro", "perro", "perro", "gato", "toga"};
-        getGropusAnagrams(listaAnagramas);
     }
     // 1. Crea una función que reciba dos números enteros y retorne el mayor de los dos.
     public static void returnBigest(int a, int b) {
@@ -287,73 +266,7 @@ public class mineExercises {
     // 9. Crea una función que reciba un String y retorne true si es un palíndromo (se lee igual al derecho y al revés, ignorando espacios). Ejemplo: "anita lava la tina" -> true.
 
     // 10. Crea una función que reciba una lista de números (ArrayList<Integer>) y retorne una nueva lista con los mismos números pero sin duplicados y ordenados de menor a mayor.
-    // Dado un array de enteros nums, devuelve truesi algún valor aparece más de una vez en el array, de lo contrario devuelve false.
-
-        public static boolean hasDuplicate(int[] nums) {
-         HashSet<Integer> hashSet = new HashSet<>();
-         for ( int i : nums) {
-             if (!hashSet.add(i)) {
-                 return true;
-             }
-         } return  false;
-
-        }
-    // Dadas dos cadenas s y t, devuelve true si las dos cadenas son anagramas entre sí, de lo contrario devuelve false. Dos cadenas de caracteres son anagramas si contienen los mismos caracteres, apareciendo cada carácter el mismo número de veces, independientemente del orden.
-    public static boolean isPalindrome(String palabra, String palabra2) {
-        if (!(palabra.length() == palabra2.length())) {
-            return false;
-        }
-        HashMap<Character, Integer> hashMap = new HashMap<>();
-        for (int i = 0; i < palabra.length(); i++) {
-            hashMap.put(palabra.charAt(i), +1);
-        }
-        HashMap<Character, Integer> hashMap2 = new HashMap<>();
-        for  (int i = 0; i < palabra2.length(); i++) {
-            hashMap2.put(palabra.charAt(i), +1);
-        }
-        System.out.println(hashMap);
-        System.out.println(hashMap2);
-        System.out.println(hashMap.equals(hashMap2));
-        return hashMap.equals(hashMap2);
-    }
-
-
-    public static void findIndexSmallersEqualsTarget (int [] lista, int numero ){
-        var numero1 = 0;
-        var numero2 = 0;
-        for (int i = 0; i < lista.length; i++) {
-         for (int j = i + 1; j < lista.length; j++) {
-             if (lista[i] + lista[j] == numero) {
-                 numero1 = i;
-                 numero2 = j;
-                 break;
-             }
-         }
-        }
-        System.out.println(numero1);
-        System.out.println(numero2);
-        }
-      // Dado un array de cadenas strs, agrupa todos los anagramas en sublistas. Puedes devolver el resultado en cualquier orden .
-      //Un anagrama es una cadena de caracteres que contiene exactamente los mismos caracteres que otra cadena, pero el orden de los caracteres puede ser diferente.
-      //Input: strs = ["act","pots","tops","cat","stop","hat"]
-      //Output: [["hat"],["act", "cat"],["stop", "pots", "tops"]]
-
-      public static List<List<String>> getGropusAnagrams(String[] list) {
-          HashMap<String, List<String>> hashMap = new HashMap<>();
-          for (String palabra : list) {
-              char[] caracteres = palabra.toCharArray();
-              Arrays.sort(caracteres);
-              String ordenado = new String(caracteres);
-
-              hashMap.putIfAbsent(ordenado, new ArrayList<>());
-              hashMap.get(ordenado).add(palabra);
-          }
-
-          var resultado = new ArrayList<List<String>>(hashMap.values());
-          System.out.println(resultado);
-          return resultado;
-      }
- }
+}
 
 
 
