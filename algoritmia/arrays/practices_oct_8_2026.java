@@ -25,6 +25,7 @@ public class practices_oct_8_2026
     agoupWordFortheisFirstChar(listOfWords);
     conuntTimeTheSameNumber(listOfNumbers);
     takeWordThatDontAreRepeated(listOfWords);
+    ordenBetweenParsAndImpars(listOfNumbers);
 
   }
     // 1. Dado un array de enteros nums, devuelve true si algún valor aparece al menos dos veces, y false si todos son distintos. (patrón: Set / frecuencia)
@@ -183,4 +184,19 @@ public class practices_oct_8_2026
 
 
     // 10. Dado un array de enteros, agrupa los números en un HashMap<String, List<Integer>> con dos claves: "pares" e "impares". (patrón: agrupar por categoría)
+    public static void ordenBetweenParsAndImpars(int[] list) {
+        HashMap<String, List<Integer>> map = new HashMap<>();
+
+        for (int i = 0; i < list.length; i++) {
+            if (list[i] % 2 == 0) {
+                map.putIfAbsent("Pares", new ArrayList<>());   // solo crea si no existe
+                map.get("Pares").add(list[i]);
+            } else {
+                map.putIfAbsent("Impares", new ArrayList<>());
+                map.get("Impares").add(list[i]);
+            }
+        }
+
+        System.out.println(map);
+    }
 }
