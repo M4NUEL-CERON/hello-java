@@ -14,9 +14,8 @@ public class practices_oct_8_2026
     String word2 = "emanuel";
     String animal = "la letra x sera la primera letra que no se repite, supongo que todas las de mas lo haran por eso apareceran parce pero esta letra es muy especial y poco usando asi que muy egura mente todoas las otras letras se repitan pero esta no lo hara";
 
-
     //executions
-    detectReapets(listOfNumbers);
+    /*detectReapets(listOfNumbers);
     countChartsOnString(animal);
     takeRepeatsBeteewLists(listOfNumbers, ListOfNumbers2);
     FirstCharcarterDontReatOfString(animal);
@@ -26,6 +25,8 @@ public class practices_oct_8_2026
     conuntTimeTheSameNumber(listOfNumbers);
     takeWordThatDontAreRepeated(listOfWords);
     ordenBetweenParsAndImpars(listOfNumbers);
+     */
+      topKFrequent(listOfNumbers, 2);
 
   }
     // 1. Dado un array de enteros nums, devuelve true si algún valor aparece al menos dos veces, y false si todos son distintos. (patrón: Set / frecuencia)
@@ -189,7 +190,7 @@ public class practices_oct_8_2026
 
         for (int i = 0; i < list.length; i++) {
             if (list[i] % 2 == 0) {
-                map.putIfAbsent("Pares", new ArrayList<>());   // solo crea si no existe
+                map.putIfAbsent("Pares", new ArrayList<>());
                 map.get("Pares").add(list[i]);
             } else {
                 map.putIfAbsent("Impares", new ArrayList<>());
@@ -198,5 +199,29 @@ public class practices_oct_8_2026
         }
 
         System.out.println(map);
+    }
+    public static int[] topKFrequent(int[] nums, int k) {
+        // 1. Map de frecuencias (esto ya lo sabes)
+        HashMap<Integer, Integer> frecuencias = new HashMap<>();
+        for (int n : nums) {
+            frecuencias.put(n, frecuencias.getOrDefault(n, 0) + 1);
+            System.out.println(n + " " + frecuencias.get(n));
+        }
+
+        // 2. Sacar las entradas a una lista
+        List<Map.Entry<Integer, Integer>> lista = new ArrayList<>(frecuencias.entrySet());
+
+        // 3. Ordenar la lista por frecuencia, de mayor a menor
+        lista.sort((a, b) -> b.getValue() - a.getValue());
+        System.out.println(lista);
+
+        // 4. Tomar los primeros k números
+        int[] resultado = new int[k];
+        for (int i = 0; i < k; i++) {
+            resultado[i] = lista.get(i).getKey();
+            System.out.println(lista.get(i).getKey());
+        }
+        System.out.println(Arrays.toString(resultado));
+        return resultado;
     }
 }

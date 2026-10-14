@@ -1,9 +1,6 @@
 package algoritmia.strings;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class GroupAnagrams {
 
@@ -25,5 +22,17 @@ public class GroupAnagrams {
         }
 
         return new ArrayList<>(grupos.values());
+    }
+    //Dado un array de enteros nums y un entero k, devuelve los k elementos más frecuentes dentro del array.
+    public static void nuevosAnimados (int[] listNums, int k){
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int [] nums = new int[k - 1];
+        for (int i = 0; i < listNums.length; i++) {
+            if (map.containsKey(listNums[i])) {
+                map.put(listNums[i], map.get(listNums[i]) + 1);
+            } else  {
+                map.put(listNums[i], 1);
+            }
+        }
     }
 }
